@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robots memory game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="backImg">
+    <div id="top">
+        <h1>Robots Memory Game</h1>
+    </div>
+    <div id="settings">
+        <div id="score">
+            <div id="showScoreD">
+                <p id="showScore"></p>
+            </div>
+            <p id="scorePara">score</p>
+        </div>
+        <div id="buttons">
+            <input type="text" id="howManyCards" name="howManyCards" placeholder="how many cards">
+            <button type="submit" id="howManyCardsSub" name="howManyCardsSub" onclick="fillPage()">play</button>
+            <button id="resetPoints" onclick="resetPoints()">reset points</button>
+            <button id="hideCardsButt" onclick ="hideCards()">hide</button>
+            <button id="showCardsButt" onclick="showCards()">show</button>   
+        </div>
+    </div>
+    <div id="playZone">
+        <!-- playing cards are here -->
+    </div>
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
